@@ -1,4 +1,12 @@
-package com.juaracoding.imajavafundamental.testharian.Praktikum1;
+package com.juaracoding.imajavafundamental.testharian.Praktikum1;/*
+IntelliJ IDEA 2023.2.4 (Community Edition)
+Build #IC-232.10203.10, built on October 25, 2023
+@Author ACER a.k.a. Irsyad Muhammad Andre
+Java Developer
+Created on 11/1/2023 6:45 PM
+@Last Modified 11/1/2023 6:45 PM
+Version 1.0
+*/
 
 import java.util.Scanner;
 
@@ -7,8 +15,6 @@ public class Praktikum1 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("(Input) Masukkan Kata: ");
         String input = scanner.nextLine();
-        String inputlowe =input.toLowerCase();
-        String inputupp =input.toUpperCase();
         int jumlahKarakter = hitungKarakter(input);
         System.out.println("(Output) Hasil: " + jumlahKarakter);
     }
@@ -20,7 +26,6 @@ public class Praktikum1 {
 
             int charascii = input.charAt(i);
             if(!(charascii>=97&&charascii<=122)){
-                System.out.println(charascii+" "+ input.charAt(i));
                 sumascii +=charascii;
             }
         }
