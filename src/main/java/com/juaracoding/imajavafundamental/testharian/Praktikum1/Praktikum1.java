@@ -21,16 +21,16 @@ public class Praktikum1 {
 
     public static int hitungKarakter(String input) {
 
-        int sumascii=0;
+        int sumAscii=0;
         for (int i =0;i<input.length();i++){
 
-            int charascii = input.charAt(i);
-            if(!(charascii>=97&&charascii<=122)){
-                sumascii +=charascii;
+            int charAscii = input.charAt(i);
+            if(!(charAscii>=97&&charAscii<=122)){
+                sumAscii +=charAscii;
             }
         }
 
 
-        return sumascii;
+        return sumAscii;
     }
 }
